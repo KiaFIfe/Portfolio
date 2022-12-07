@@ -1,0 +1,75 @@
+:root {
+  --main-color: #6558ff;
+  --paragraph-color: #f7eeff;
+  --contact-shadow: 5px 5px 10px rgb(151, 150, 150);
+}
+html {
+  height: 150%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(grey, white, black);
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin: 0;
+  opacity: 0.8;
+}
+h1 {
+  font-size: 90px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 30px;
+}
+.nav-bar {
+  width: 100%;
+  background-color: black;
+  padding: 25px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+.contact,
+.about {
+  font-style: none;
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 10px;
+  border-width: 1px;
+  border-color: var(--main-color);
+}
+.paragraphs {
+  display: flex;
+  flex-direction: row;
+}
+.para {
+  background-color: var(--paragraph-color);
+  margin: 10px;
+  padding: 10px;
+}
+.contact-me {
+  text-align: center;
+  font-size: 60px;
+}
+.email {
+  text-align: center;
+}
+.link-email,
+.home {
+  display: flex;
+  justify-content: center;
+}
