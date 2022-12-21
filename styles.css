@@ -1,15 +1,14 @@
 :root {
-  --main-color: #6558ff;
-  --paragraph-color: #f7eeff;
-  --contact-shadow: 5px 5px 10px rgb(151, 150, 150);
+  --main-color: #afbdb9;
+  --contact-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 html {
-  height: 150%;
+  height: 250%;
 }
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(grey, white, black);
+  background: linear-gradient(#ecf6f3, #fff, #ecf6f3);
 }
 h1,
 h2,
@@ -30,18 +29,7 @@ h3 {
   font-weight: bold;
   font-size: 30px;
 }
-.nav-bar {
-  width: 100%;
-  background-color: black;
-  padding: 25px;
-  opacity: 0.7;
-  margin-bottom: 30px;
-}
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin: 100px;
-}
+
 .contact,
 .about {
   font-style: none;
@@ -52,24 +40,56 @@ h3 {
   border-width: 1px;
   border-color: var(--main-color);
 }
+.contact-button,
+.about-button,
+.project-buttons {
+  background-color: var(--main-color);
+  color: #ffff;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 100px 20px;
+  box-shadow: var(--contact-shadow);
+  text-align: center;
+  display: block;
+}
+.contact-button:hover,
+.about-button:hover,
+.project-buttons:hover {
+  color: var(--main-color);
+  background-color: rgb(110, 109, 110);
+  transition: 0.25s;
+}
+
 .paragraphs {
   display: flex;
   flex-direction: row;
 }
 .para {
-  background-color: var(--paragraph-color);
+  background-color: rgb(244, 252, 249);
   margin: 10px;
   padding: 10px;
+  border-radius: 3px;
+  margin-top: 100px;
 }
 .contact-me {
   text-align: center;
-  font-size: 60px;
+}
+.contact-details {
+  font-size: 50px;
+  padding-top: 100px;
 }
 .email {
   text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #797a7a;
 }
 .link-email,
 .home {
   display: flex;
   justify-content: center;
+}
+.rows {
+  margin-bottom: 100px;
 }
